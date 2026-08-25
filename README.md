@@ -67,8 +67,8 @@ pnpm check:reproducible
 
 - [OpenAPI schema](https://docs.twexapi.io/openapi.json)
 - [API reference](https://docs.twexapi.io/api-reference/overview)
-- [Support policy](./SUPPORT.md)
-- [Security policy](./.github/SECURITY.md)
-- [Contribution guide](./CONTRIBUTING.md)
+- [Organization support policy](https://github.com/twexapi-dev/.github/blob/main/SUPPORT.md)
+- [Organization security policy](https://github.com/twexapi-dev/.github/blob/main/SECURITY.md)
+- [Contribution guide](https://github.com/twexapi-dev/.github/blob/main/CONTRIBUTING.md)
 
 TwexAPI is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
