@@ -1,0 +1,66 @@
+{
+  "name": "@twexapi/paperclip-plugin-x-api-scraper",
+  "version": "0.1.0",
+  "description": "Paperclip plugin for Twitter search, tweet lookup, profiles, timelines, and trending tweets through TwexAPI. Not affiliated with X Corp.",
+  "type": "module",
+  "license": "MIT",
+  "author": {
+    "name": "TwexAPI",
+    "email": "support@twexapi.io",
+    "url": "https://docs.twexapi.io"
+  },
+  "homepage": "https://docs.twexapi.io",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/twexapi-dev/paperclip-plugin-x-api-scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/twexapi-dev/paperclip-plugin-x-api-scraper/issues"
+  },
+  "keywords": [
+    "paperclip",
+    "paperclip-plugin",
+    "twexapi",
+    "twitter-search",
+    "twitter-api",
+    "agent-tools"
+  ],
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "node ./esbuild.config.mjs",
+    "check:reproducible": "node ./scripts/check-reproducible.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --coverage --config ./vitest.config.ts",
+    "check": "pnpm typecheck && pnpm test && pnpm build"
+  },
+  "paperclipPlugin": {
+    "manifest": "./dist/manifest.js",
+    "worker": "./dist/worker.js"
+  },
+  "dependencies": {
+    "@paperclipai/plugin-sdk": "2026.817.0"
+  },
+  "devDependencies": {
+    "@types/node": "26.2.0",
+    "@vitest/coverage-v8": "4.1.11",
+    "esbuild": "0.28.2",
+    "typescript": "5.8.3",
+    "vitest": "4.1.11"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  }
+}
