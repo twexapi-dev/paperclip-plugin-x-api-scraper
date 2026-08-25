@@ -13,7 +13,7 @@ Add 6 read-only TwexAPI tools to Paperclip agents for Twitter search, tweet look
 | Read profile tweets | `twexapi.get_user_tweets` | List recent posts from one user. |
 | Read trending tweets | `twexapi.get_trends` | Get trending tweets by country. |
 
-This plugin does not export followers or publish posts. Use the [TwexAPI REST API](https://docs.twexapi.io/api-reference/overview) for those tasks.
+This plugin does not export followers or publish posts. Use the [TwexAPI REST API](https://docs.twexapi.io) for those tasks.
 
 ## TwexAPI routes
 
@@ -66,7 +66,7 @@ pnpm check:reproducible
 ## API contract
 
 - [OpenAPI schema](https://docs.twexapi.io/openapi.json)
-- [API reference](https://docs.twexapi.io/api-reference/overview)
+- [API reference](https://docs.twexapi.io)
 - [Organization support policy](https://github.com/twexapi-dev/.github/blob/main/SUPPORT.md)
 - [Organization security policy](https://github.com/twexapi-dev/.github/blob/main/SECURITY.md)
 - [Contribution guide](https://github.com/twexapi-dev/.github/blob/main/CONTRIBUTING.md)
