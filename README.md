@@ -41,16 +41,16 @@ Create an API key in the [TwexAPI dashboard](https://twexapi.io/dashboard) and s
 ## Install
 
 ```sh
-paperclipai plugin install @twexapi/paperclip-plugin-x-api-scraper
+paperclipai plugin install @twexapi-dev/paperclip-plugin-x-api-scraper
 ```
 
 Pin the current release when you need reproducible installs:
 
 ```sh
-paperclipai plugin install @twexapi/paperclip-plugin-x-api-scraper --version 0.1.1
+paperclipai plugin install @twexapi-dev/paperclip-plugin-x-api-scraper --version 0.1.2
 ```
 
-npm: [@twexapi/paperclip-plugin-x-api-scraper](https://www.npmjs.com/package/@twexapi/paperclip-plugin-x-api-scraper)
+npm: [@twexapi-dev/paperclip-plugin-x-api-scraper](https://www.npmjs.com/package/@twexapi-dev/paperclip-plugin-x-api-scraper)
 
 ## Develop locally
 

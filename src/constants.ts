@@ -1,5 +1,5 @@
 const PLUGIN_ID = "twexapi.paperclip-plugin-x-api-scraper";
-const PLUGIN_VERSION = "0.1.1";
+const PLUGIN_VERSION = "0.1.2";
 const DEFAULT_API_BASE_URL = "https://api.twexapi.io";
 const DEFAULT_TIMELINE_COUNT = 20;
 const DEFAULT_USER_SEARCH_COUNT = 20;

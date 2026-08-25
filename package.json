@@ -1,6 +1,6 @@
 {
-  "name": "@twexapi/paperclip-plugin-x-api-scraper",
-  "version": "0.1.1",
+  "name": "@twexapi-dev/paperclip-plugin-x-api-scraper",
+  "version": "0.1.2",
   "description": "Paperclip plugin for Twitter search, tweet lookup, profiles, timelines, and trending tweets through TwexAPI. Not affiliated with X Corp.",
   "type": "module",
   "license": "MIT",
