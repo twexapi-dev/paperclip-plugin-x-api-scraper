@@ -94,7 +94,7 @@ const manifest: PaperclipPluginManifestV1 = {
     {
       name: TOOL_NAMES.lookupTweet,
       displayName: "Get tweet",
-      description: "Get tweet detail by ID through TwexAPI.",
+      description: "Get tweet detail by ID with text, author, metrics, and media through TwexAPI.",
       parametersSchema: {
         type: "object",
         properties: {

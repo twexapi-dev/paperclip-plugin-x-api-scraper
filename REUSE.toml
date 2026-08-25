@@ -12,6 +12,7 @@ path = [
   "package.json",
   "pnpm-lock.yaml",
   "tsconfig.json",
+  "SUPPORT.md",
 ]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 TwexAPI Contributors"
