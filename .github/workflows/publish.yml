@@ -1,3 +1,6 @@
+# SPDX-FileCopyrightText: 2026 TwexAPI Contributors
+# SPDX-License-Identifier: MIT
+
 name: Publish package to npm
 
 on:
@@ -22,18 +25,21 @@ jobs:
       contents: read
       id-token: write
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out release
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: ${{ github.event.release.tag_name }}
           persist-credentials: false
 
-      - uses: actions/setup-node@v4
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
         with:
-          node-version: "22"
+          node-version: "24.15.0"
           registry-url: https://registry.npmjs.org
           package-manager-cache: false
 
-      - uses: pnpm/action-setup@v4
+      - name: Set up pnpm
+        uses: pnpm/action-setup@0977fd99725f1db4007ccb2928dbb4e90d06cc86 # v6.0.10
         with:
           version: 10.33.0
 
@@ -46,8 +52,20 @@ jobs:
           git fetch origin main --depth=1
           test "$(git rev-parse HEAD)" = "$(git rev-parse origin/main)"
 
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm check
-      - run: pnpm check:reproducible
-      - run: pnpm pack --dry-run
-      - run: npm publish --access public
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Check
+        run: pnpm check
+
+      - name: Check reproducible package
+        run: pnpm check:reproducible
+
+      - name: Audit
+        run: pnpm audit --audit-level=low
+
+      - name: Inspect package
+        run: pnpm pack --dry-run
+
+      - name: Publish
+        run: npm publish --access public
