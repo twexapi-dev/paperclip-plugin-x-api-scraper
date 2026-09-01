@@ -1,6 +1,8 @@
-# Twitter search & X API tools for Paperclip agents
+# TwexAPI tools for Paperclip agents
 
-Add 6 read-only TwexAPI tools to Paperclip agents for Twitter search, tweet lookup, profiles, timelines, and trending tweets.
+> TwexAPI is an independent third-party service. Not affiliated with X Corp. "Twitter" and "X" are trademarks of X Corp.
+
+Add 6 read-only TwexAPI tools to Paperclip agents for public post search, post lookup, profiles, timelines, and trends.
 
 ## Tools
 
