@@ -6,7 +6,7 @@ Thanks for helping improve the TwexAPI Paperclip plugin.
 
 - Search existing issues and pull requests for the same request.
 - Keep reports specific, reproducible, and public-safe.
-- Never include API keys, cookies, or private account data.
+- Never include API keys, credentials, or private account data.
 - For suspected vulnerabilities, follow [.github/SECURITY.md](./.github/SECURITY.md).
 
 Useful issue details:
